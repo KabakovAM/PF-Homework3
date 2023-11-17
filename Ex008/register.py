@@ -26,6 +26,3 @@ def reg():
         db.session.commit()
         return 'Registration - OK'
     return render_template('reg.html', form=form)
-
-if __name__ == '__main__':
-    app.run(debug=True)
