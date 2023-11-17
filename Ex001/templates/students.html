@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    {{ students }}
+{% endblock %}
+
+{% block content %}
+    <div>
+        {% for student in students %}
+            <p>
+                Студент: {{ student.last_name }}<br>
+                Факультет: {{ student.id_faculty }}
+            </p> 
+        {% endfor %}
+    </div>
+{% endblock %}
